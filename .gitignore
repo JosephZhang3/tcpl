@@ -1,5 +1,7 @@
+# path about clion IDE 
 cmake-build-debug/
 CMakeLists.txt
+.idea/
 
 # Prerequisites
 *.d
