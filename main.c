@@ -10,6 +10,7 @@
 #include "chap1/exercise1-9.h"
 #include "chap1/exercise1-10.h"
 #include "chap1/word_count.h"
+#include "chap1/exercise1-12.h"
 
 int main() {
     printf("Hello, World!\n");
@@ -45,6 +46,8 @@ int main() {
 //    count19();
 
 //    replace110();
-    word_count();
+//    word_count();
+
+    printout112();
     return 0;
 }
