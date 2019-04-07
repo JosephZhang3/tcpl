@@ -11,12 +11,13 @@
 #include "chap1/exercise1-10.h"
 #include "chap1/word_count.h"
 #include "chap1/exercise1-12.h"
+#include "chap1/use_array.h"
 
 int main() {
     printf("Hello, World!\n");
 
     printf("%d\n", CINT);
-    printf("%s\n", CSTR);//打印字符常量，注意大写以区分
+    printf("%s\n", CSTR);//打印字符常量，注意大写以与普通变量命名区分
 
     printf("special\y\n");
     printf("special\7\n");
@@ -48,6 +49,8 @@ int main() {
 //    replace110();
 //    word_count();
 
-    printout112();
+//    printout112();
+
+    stat_char_count();
     return 0;
 }
