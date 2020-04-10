@@ -34,7 +34,7 @@ void stat_char_count() {
         }
     }
 
-    printf("数字个数\n");
+    printf("数字个数\n");//why not use real linux
     for (i = 0; i < 10; i++) {
         printf("%d\t%d\n", i, ndigit[i]);
     }
