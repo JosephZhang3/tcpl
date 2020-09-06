@@ -13,6 +13,7 @@ void push(double);
 
 double pop(void);
 
+// TODO 实现起来还是很有难度的，多看几遍，捋清楚细节对写复杂代码很有帮助
 int main() {
     int type;
     double op2;
@@ -93,7 +94,7 @@ int get_operand(char s[]) {
     }
 
     // debug才能看明白为什么这么写
-    // 删除数组末尾的不是 数字、小数点、EOF 的一个字符
+    // 明白了，这是为了删除数组末尾的非 数字、小数点、EOF 的多读入的一个字符
     s[i] = '\0';
 
     return NUMBER; // 标识有用数字都已经被收集起来了
@@ -124,6 +125,7 @@ double pop() {
     if (sp > 0) {
         // 自己第一遍写错的时候写成了 sp-- ，书上说是先自减即 --sp ，why why why
         // 因为sp指向的是栈顶元素的上一个元素，要拿到栈顶元素，就要sp先减一再作为表达式的值
+        // 可以画出栈的简图帮助理解
         return my_stack[--sp];
     } else {
         printf("error: stack empty\n");
@@ -131,7 +133,7 @@ double pop() {
     }
 }
 
-#define BUF_SIZE 5
+#define BUF_SIZE 100
 
 char buf[BUF_SIZE];
 int bufp = 0;
