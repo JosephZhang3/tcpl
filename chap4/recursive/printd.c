@@ -17,6 +17,7 @@ void print_d(int n) {
         n = -n;
     }
 
+    // 递归终止条件：n/10 == 0
     if (n / 10) {
         printf("本层调用参数 n = %d, （递）指向更低一层调用 n = %d\n", n, n / 10);
         print_d(n / 10);
